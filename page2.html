@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Nooch Entertainment Discover</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+h1 {
+  font-size: 80px;
+}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-large w3-light-grey">
+      <div class="w3-col s3">
+        <a class="w3-button w3-block" href="index.html">Home</a>
+      </div>
+      <div class="w3-col s3">
+        <a class="w3-button w3-block" href="page2.html">Discover</a>
+      </div>
+      <div class="w3-col s3">
+        <a class="w3-button w3-block" href="page3.html">About</a>
+      </div>
+      <div class="w3-col s3">
+        <a class="w3-button w3-block" href="mailto:nooch.management@gmail.com"">Contact</a>
+      </div>
+    </div>
+  </div>
+  \
+    <!-- Grid -->
+    <div class="w3-row-padding" id="plans">
+      <div class="w3-center w3-padding-64">
+        <h1>Nooch Entertainment</h1>
+      </div>
+
+    <!-- Grid -->
+    <div class="w3-row-padding" id="about">
+      <div class="w3-center w3-padding-64">
+        <span class="w3-xlarge w3-border-dark-grey w3-padding-16">An Artist A Day</span>
+<p>When COVID-19 struck our world it devastated two very important Music industry sectors, The live Music scene and Artist Discovery scene. With shows disappearing each day the rate of discovery for new artists dropped along with it. The less shows you're exposed to the lesser of a chance you'll discover new music. With this all in mind Nooch Entertainment came up with the "An Artist A Day" campaign that would highlight artists from around the world, promote artist discovery every single day and more importantly help artists however we can.</p>
+
+​
+
+<p>Our designs include the artists location (City, Country), Most Current music (Track, Album) and most importantly a section where the artists account is tagged allowing easy access for discovery.</p>
+
+​
+
+<p>Starting at the beginning of quarantine we featured one new artist 5 days a week strictly at noon. After 50 artists featured we toke a slight break to revamp the campaign and give it a fresh new look. With our revamp and some slight adjustments to our designs the campaign continued on to now generating almost 5,000 views each month, 1,000 sticker taps each month and close to 100 artists featured from 8 different countries. </p>
+
+
+<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="550" style="width:100%;max-width:999px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/an-artist-a-day/pl.u-b3b8RM4UyBGbez3"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <h4>Contact</h4>
+    <a href="mailto:nooch.management@gmail.com" class="w3-button w3-black w3-margin"><i class="w3-margin-middle"></i>Email Us</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/NoochEntertainmentGroup/about/?ref=page_internal"class="fa fa-facebook-official w3-hover-opacity"></a>
+      <a href="https://www.instagram.com/noochentertain/?hl=en" class="fa fa-instagram w3-hover-opacity"></a>
+    </div>
+  </footer>
+
+
+  <script>
+  // Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demodots");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+
+  </body>
+  </html>
